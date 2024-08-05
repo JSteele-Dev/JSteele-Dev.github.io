@@ -1,5 +1,5 @@
 // initial variable for toggle
-const navToggle = document.querySelector('#nav-toggle');
+const navToggle = document.getElementById('nav-toggle');
 let isNavExpanded = navToggle.getAttribute('aria-expanded') === 'true';
 
 //function to toggle visibility
