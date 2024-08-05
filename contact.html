@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact John Steele</title>
+    <link rel="stylesheet" href="./Resources/Styles/style.css">
 </head>
 <body>
-    <header>
-        <h1 id="owner">John Steele</h1>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Return</a></li>
-            </ul>
+    <header id="navbar">
+        <nav class="nav-container container">
+            <h1 id="owner">John Steele</h1>
+            <button id="nav-toggle" type="button" aria-label="Toggle menu" aria-controls="nav-menu" aria-expanded="true">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="nav-menu" aria-labelledby="nav-toggle">
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="./index.html" class="nav-link">About Me</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 </body>
