@@ -14,7 +14,7 @@ body {
     color: white;
 }
 .container {
-    max-width: 100%;
+    max-width: 1200px;
     padding: 0 1.4rem;
     margin: 0 auto;
 }
@@ -29,11 +29,11 @@ body {
     display: flex;
     justify-content: space-between;
     height: 100%;
+    float: right;
     align-items: center;
 }
 .nav-item {
     margin: 0.4em;
-    width: 100%;
 }
 .nav-link {
     color: white;
@@ -103,8 +103,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    left: 0;
-    right: 0;
+    width: 250px;
+    right: -25px;
     margin: 1.4rem;
     border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -114,6 +114,9 @@ body {
 }
 /* responsive design when viewed on desktop */
 @media screen and (min-width: 700px) {
+    .nav-container {
+        float: none;
+    }
     #nav-toggle,
     #nav-toggle[aria-expanded='true'] {
         display: none;
